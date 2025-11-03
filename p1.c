@@ -9,7 +9,7 @@ int main() {
     // Process each digit from right to left
     while (num > 0) {
         digit = num % 10;     // Get last digit
-        digit = (digit + 1) % 10; // Add 1, wrap around if 9 → 0
+        digit = (digit + 1) % 10; // 1 add kro, wrap around if 9 → 0
         new_num = new_num + digit * place;
         place = place * 10;
         num = num / 10;       // Remove last digit
